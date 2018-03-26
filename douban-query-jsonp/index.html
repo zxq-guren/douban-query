@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="desctiption" content="豆瓣搜索">
+    <title>豆瓣搜索</title>
+    <link rel="icon" href="img/favicon.ico" type="image/ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+          integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/media_query.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_460116_f6wrr607kua0pb9.css">
+    <link rel="stylesheet" href="css/icon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animation.css">
+</head>
+<body>
+
+<!-- 首页样式 + 全局数据加载动画 -->
+
+<section id="site-homepage" class="site-welcome"></section>
+
+<!-- 顶部导航搜索栏 -->
+
+<nav class="navbar fixed-top site-navbar">
+    <div class="container">
+        <div class="col-1 col-md-1">
+            <i class="iconfont icon-douban"></i>
+            <span class="word-douban">豆瓣搜索</span>
+        </div>
+        <div class="col-10 col-md-10">
+            <div class="row">
+                <div class="col-10 col-md-9">
+                    <div class="input-group">
+                        <div class="input-group-append">
+                            <button id="site-dropdown-button" class="btn btn-outline-secondary dropdown-toggle" type="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">图书
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="javascript:void(0);">图书</a>
+                                <a class="dropdown-item" href="javascript:void(0);">电影</a>
+                                <a class="dropdown-item" href="javascript:void(0);">音乐</a>
+                            </div>
+                        </div>
+                        <input type="text" id="site-search-content" class="form-control"
+                               aria-label="Text input with dropdown button" placeholder="图书/电影/音乐">
+                    </div>
+                </div>
+                <div class="col-2 col-md-2">
+                    <button id="site-search-button" type="button" class="btn btn-success site-search-button">搜索</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- 搜索内容展示区 -->
+
+<section class="site-content">
+    <div class="container">
+        <!-- Start: 数据展示区开始 -->
+        <div id="show-data-area" class="row"></div>
+        <!-- End: 数据展示区结束 -->
+    </div>
+</section>
+
+<!-- 底部翻页按钮 -->
+
+<section class="site-bottom-nav">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label id="prev-page" class="btn btn-secondary active">
+                        <input type="radio" name="options" autocomplete="off" checked>上一页
+                    </label>
+                    <label id="next-page" class="btn btn-secondary">
+                        <input type="radio" name="options" autocomplete="off">下一页
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 底部版权展示 -->
+
+<section class="site-copyright">
+    <p><a href="https://github.com/CaptainInPHW/douban-query-jsonp" target="_blank">github.com/CaptainInPHW.</a>&nbsp;All&nbsp;Rights&nbsp;Reserved.</p>
+    <p>&copy;<span>&nbsp;CopyRight&nbsp;</span>2018-2019</p>
+</section>
+
+<!-- 插件库 -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+        integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+<script src="//at.alicdn.com/t/font_460116_f6wrr607kua0pb9.js"></script>
+
+<!-- Model -->
+
+<script src="js/View.js"></script>
+<script src="js/Model.js"></script>
+<script src="js/Controller.js"></script>
+<script src="js/request_module.js"></script>
+<script src="js/response_module.js"></script>
+
+</body>
+</html>

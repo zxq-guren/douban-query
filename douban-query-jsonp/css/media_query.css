@@ -1,0 +1,44 @@
+@media (max-width: 425px) {
+    .site-navbar{
+        margin-left: -25px;
+    }
+    .icon-douban{
+        margin-left: -3px;
+    }
+    .word-douban{
+        display: none;
+    }
+    .input-group{
+        margin-left: -10px;
+    }
+    .site-search-button{
+        margin-left: -25px;
+    }
+}
+@media (min-width: 426px) and (max-width: 575px){
+    .icon-douban{
+        margin-left: -5px;
+    }
+	.word-douban{
+		display: none;
+	}
+    .input-group{
+        margin-left: -15px;
+    }
+    .site-search-button{
+        margin-left: -20px;
+    }
+}
+@media (min-width: 426px) and (max-width: 767px){
+    .word-douban{
+        display: none;
+    }
+}
+@media (min-width: 768px){
+    .icon-douban{
+        display: none;
+    }
+    .input-group{
+        margin-left: 5px;
+    }
+}

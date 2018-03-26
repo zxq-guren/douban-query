@@ -1,0 +1,40 @@
+ /* 阿里图标通用样式 */
+
+
+/* 1、symbol引用
+ *
+ * .icon {
+ * 		width: 1em; height: 1em;
+ *  	vertical-align: -0.15em;
+ *  	fill: currentColor;
+ *  	overflow: hidden;
+ *  	font-size: 20px;
+ *  	color: #333;
+ *  }
+ *
+ * 2、font-class引用
+ *
+ *	<link rel="stylesheet" href="//at.alicdn.com/t/font_460116_f6wrr607kua0pb9.css">
+ *	
+ */
+
+/*  图标应用模板
+ *
+ *  1、symbol引用
+ * 
+ *  <svg class="icon" aria-hidden="true">
+ *     <use xlink:href="#icon-xxx"></use>
+ *  </svg>
+ *
+ *	2、font-class引用
+ *
+ * 	<i class="iconfont icon-xxx"></i>
+ * 
+ */
+
+
+
+.icon-douban{
+	font-size: 35px;
+	color: #28a745;
+}

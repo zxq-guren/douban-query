@@ -1,0 +1,10 @@
+/* 全局数据加载动画 */
+@keyframes fadein {
+     from {opacity:1;transform:scale(0);}
+     to {opacity:0;transform:scale(1);}
+ }
+/* 欢迎页 welcome 呼吸效果 */
+@keyframes breath {
+    0%{ text-shadow: 0 0 15px transparent; }
+    100%{ text-shadow: 0 0 15px #068523 }
+}

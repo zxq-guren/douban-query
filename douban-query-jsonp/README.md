@@ -1,0 +1,1 @@
+ทยะด [douban-query-jsonp](https://github.com/CaptainInPHW/douban-query-jsonp )
